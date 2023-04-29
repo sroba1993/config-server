@@ -5,9 +5,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/sroba1993/Config
-#Local configuration
-#          uri: file:///D:\Proyectos\ADN - Scotiabank\Config
+          uri: https://github.com/sroba1993/Config  #Local configuration  uri: file:///D:\Proyectos\ADN - Scotiabank\Config
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:9411/
 
 server:
   port: 8888
